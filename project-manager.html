@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Project Management Dashboard</title>
+    <link rel="stylesheet" href="project-manager-style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Project Management Dashboard</h1>
+        <input type="text" id="project-name" placeholder="Project Name" />
+        <input type="date" id="project-deadline" />
+        <button id="add-project">Add Project</button>
+        <div class="project-list">
+            <h2 style="color: white;">Projects</h2>
+            <ul id="project-list"></ul>
+        </div>
+        <div class="progress-container">
+            <h2 style="color: white">Progress</h2>
+            <div class="progress-bar">
+                <div id="progress" style="width: 0%;"></div>
+            </div>
+            <p id="progress-text" style="color: white;">0% Complete</p>
+        </div>
+    </div>
+    <script src="project-manager-script.js"></script>
+</body>
+</html>
